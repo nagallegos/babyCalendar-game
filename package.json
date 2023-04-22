@@ -1,0 +1,15 @@
+{
+  "name": "square-payment-demo",
+  "version": "1.0.0",
+  "description": "Demo of processing payments with the Square API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "square-connect": "^2.20210421.0"
+  }
+}
