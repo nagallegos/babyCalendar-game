@@ -1,4 +1,4 @@
-import { GridItem } from "@chakra-ui/react";
+import { Box, GridItem } from "@chakra-ui/react";
 
 interface Props {
   cellWidth?: number | string;
@@ -17,10 +17,19 @@ const CalendarItem = ({
       colSpan={1}
       w={cellWidth}
       h={cellHeight}
-      pl={2}
+      p={1}
+      margin={1}
+      borderRadius={5}
       borderWidth={4}
     >
-      {date}
+      {date !== "" && (
+        <>
+          <h1>{date}</h1>
+          <Box margin={5}>
+            <p>Calendar Cell Content goes here...</p>
+          </Box>
+        </>
+      )}
     </GridItem>
   );
 };

@@ -2,8 +2,8 @@ import { Grid } from "@chakra-ui/react";
 import CalendarItem from "./CalendarItem";
 
 interface Props {
-  cellWidth?: number;
-  cellHeight?: number;
+  cellWidth?: number | string;
+  cellHeight?: number | string;
   shift?: number;
 }
 
@@ -20,11 +20,7 @@ const CalendarGrid = ({ cellWidth, cellHeight, shift = -4 }: Props) => {
   }
 
   return (
-    <Grid
-      templateRows="repeat(4, 1fr)"
-      templateColumns="repeat(7, 1fr)"
-      gap={2}
-    >
+    <Grid templateRows="repeat(4, 1fr)" templateColumns="repeat(7, 1fr)">
       {items}
     </Grid>
   );
