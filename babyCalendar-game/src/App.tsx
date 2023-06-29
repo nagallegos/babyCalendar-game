@@ -1,7 +1,8 @@
 import "./App.css";
+import Calendar from "./components/Calendar/Calendar";
 
 function App() {
-  return <div>My app</div>;
+  return <Calendar />;
 }
 
 export default App;
